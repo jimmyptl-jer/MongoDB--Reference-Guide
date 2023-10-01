@@ -182,7 +182,7 @@ This is a fundamental way to use the `find` method in MongoDB to retrieve docume
 
 Certainly, here's the content formatted as a GitHub README.md file for MongoDB's `findOne` method:
 
-```markdown
+
 
 ## MongoDB `findOne` Method
 

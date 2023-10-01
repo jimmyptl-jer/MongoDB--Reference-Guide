@@ -125,9 +125,6 @@ In this example, `acknowledged` is `true`, indicating that the insertion was suc
 - The `insertMany` operation either inserts all documents successfully or none at all. If any document in the array encounters an error during insertion, the entire operation is rolled back.
 
 This information should help you understand how to use the `insertMany` method effectively in MongoDB for inserting multiple documents at once.
-```
-
-You can create a new README.md file in your GitHub repository and paste this content into it. Modify the `collectionName` and the code example to match your specific use case if necessary. Additionally, feel free to add any other relevant information or context to your README as needed.
 
 
 In MongoDB, the `find` method is used to retrieve documents from a collection. It allows you to query a collection to retrieve one or more documents that match specific criteria. The `find` method is one of the most commonly used methods for querying and retrieving data from a MongoDB collection.

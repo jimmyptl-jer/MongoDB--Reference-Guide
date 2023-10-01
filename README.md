@@ -301,9 +301,7 @@ In MongoDB, the `$gte` (greater than or equal) operator is a comparison operator
 
 ### Basic Syntax
 
-```javascript
 db.collectionName.find({ field: { $gte: value } })
-```
 
 - `db`: Refers to the MongoDB database where the collection is located.
 - `collectionName`: Specifies the name of the collection you want to query.
@@ -315,10 +313,9 @@ db.collectionName.find({ field: { $gte: value } })
 
 Let's demonstrate how to use the `$gte` operator in a MongoDB query:
 
-```javascript
 // Find documents where the "age" field is greater than or equal to 25
 db.users.find({ age: { $gte: 25 } })
-```
+
 
 In this example, the query will return all documents in the "users" collection where the "age" field is 25 or greater.
 
@@ -334,9 +331,8 @@ In MongoDB, the `$lt` (less than) operator is a comparison operator used to filt
 
 ### Basic Syntax
 
-```javascript
 db.collectionName.find({ field: { $lt: value } })
-```
+
 
 - `db`: Refers to the MongoDB database where the collection is located.
 - `collectionName`: Specifies the name of the collection you want to query.
@@ -348,10 +344,8 @@ db.collectionName.find({ field: { $lt: value } })
 
 Let's demonstrate how to use the `$lt` operator in a MongoDB query:
 
-```javascript
 // Find documents where the "price" field is less than $50
 db.products.find({ price: { $lt: 50 } })
-```
 
 In this example, the query will return all documents in the "products" collection where the "price" field is less than $50.
 

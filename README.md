@@ -227,4 +227,68 @@ if (document) {
 You can customize your query and projection based on your specific requirements to retrieve the desired document from the collection.
 
 This information should help you understand how to use the `findOne` method effectively in MongoDB for retrieving a single document based on specific criteria.
-```
+
+
+In MongoDB, comparison operators are used to compare values in documents and perform queries that filter documents based on specific criteria. These operators allow you to specify conditions that documents must meet to be included in the query results. Here are some of the most commonly used comparison operators in MongoDB:
+
+1. **Equality Operator (`$eq`)**: Matches values that are equal to a specified value.
+
+   ```javascript
+   db.collectionName.find({ field: { $eq: value } })
+   ```
+
+2. **Inequality Operator (`$ne`)**: Matches values that are not equal to a specified value.
+
+   ```javascript
+   db.collectionName.find({ field: { $ne: value } })
+   ```
+
+3. **Greater Than Operator (`$gt`)**: Matches values that are greater than a specified value.
+
+   ```javascript
+   db.collectionName.find({ field: { $gt: value } })
+   ```
+
+4. **Greater Than or Equal Operator (`$gte`)**: Matches values that are greater than or equal to a specified value.
+
+   ```javascript
+   db.collectionName.find({ field: { $gte: value } })
+   ```
+
+5. **Less Than Operator (`$lt`)**: Matches values that are less than a specified value.
+
+   ```javascript
+   db.collectionName.find({ field: { $lt: value } })
+   ```
+
+6. **Less Than or Equal Operator (`$lte`)**: Matches values that are less than or equal to a specified value.
+
+   ```javascript
+   db.collectionName.find({ field: { $lte: value } })
+   ```
+
+7. **In Operator (`$in`)**: Matches any of the values specified in an array.
+
+   ```javascript
+   db.collectionName.find({ field: { $in: [value1, value2, ...] } })
+   ```
+
+8. **Not In Operator (`$nin`)**: Matches none of the values specified in an array.
+
+   ```javascript
+   db.collectionName.find({ field: { $nin: [value1, value2, ...] } })
+   ```
+
+9. **Existence Operator (`$exists`)**: Matches documents where the specified field exists (true) or does not exist (false).
+
+   ```javascript
+   db.collectionName.find({ field: { $exists: true } })
+   ```
+
+10. **Type Operator (`$type`)**: Matches documents where the specified field has a certain data type.
+
+    ```javascript
+    db.collectionName.find({ field: { $type: data_type } })
+    ```
+
+These comparison operators can be used in combination with other query operators and options to construct complex queries in MongoDB. They are essential for filtering and retrieving specific documents from a collection based on various conditions.

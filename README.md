@@ -366,7 +366,6 @@ The `$and` operator performs a logical AND operation on an array of expressions 
 
 #### Basic Syntax
 
-```javascript
 db.collectionName.find({
   $and: [
     { condition1 },

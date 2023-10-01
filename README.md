@@ -355,6 +355,76 @@ In this example, the query will return all documents in the "products" collectio
 
 This information should help you understand how to use the `$lt` operator effectively in MongoDB for filtering documents based on values that are less than a specified threshold.
 
+Certainly, here's the content formatted as a GitHub README.md file for MongoDB's `$in` operator:
+
+# MongoDB Reference Guide
+
+## MongoDB `$in` Operator
+
+In MongoDB, the `$in` operator is a comparison operator used to filter documents where a specified field's value matches any of the values specified in an array. This operator is commonly used in queries when you want to find documents that have a field value that matches any of several possible values.
+
+### Basic Syntax
+
+db.collectionName.find({ field: { $in: [value1, value2, ...] } })
+
+- `db`: Refers to the MongoDB database where the collection is located.
+- `collectionName`: Specifies the name of the collection you want to query.
+- `field`: Represents the field in the documents that you want to compare.
+- `$in`: The operator itself, indicating "in."
+- `[value1, value2, ...]`: An array containing the values to match against. Documents with field values that match any of the values in the array will be included in the query results.
+
+### Example
+
+Let's demonstrate how to use the `$in` operator in a MongoDB query:
+
+// Find documents where the "category" field matches any of the specified categories
+db.products.find({ category: { $in: ["Electronics", "Clothing"] } })
+
+
+In this example, the query will return all documents in the "products" collection where the "category" field matches either "Electronics" or "Clothing."
+
+### Description
+
+The `$in` operator is particularly useful when you want to perform a query with multiple possible values for a single field. It simplifies the query by allowing you to specify the values in an array, making it more concise and readable.
+
+This information should help you understand how to use the `$in` operator effectively in MongoDB for filtering documents based on multiple possible values in a specified field.
+
+Certainly, here's the content formatted as a GitHub README.md file for MongoDB's `$nin` (not in) operator:
+
+# MongoDB Reference Guide
+
+## MongoDB `$nin` Operator
+
+In MongoDB, the `$nin` (not in) operator is a comparison operator used to filter documents where a specified field's value does not match any of the values specified in an array. This operator is commonly used in queries when you want to find documents that have a field value that does not match any of several possible values.
+
+### Basic Syntax
+
+
+db.collectionName.find({ field: { $nin: [value1, value2, ...] } })
+
+
+- `db`: Refers to the MongoDB database where the collection is located.
+- `collectionName`: Specifies the name of the collection you want to query.
+- `field`: Represents the field in the documents that you want to compare.
+- `$nin`: The operator itself, indicating "not in."
+- `[value1, value2, ...]`: An array containing the values to exclude. Documents with field values that do not match any of the values in the array will be included in the query results.
+
+### Example
+
+Let's demonstrate how to use the `$nin` operator in a MongoDB query:
+
+
+// Find documents where the "category" field does not match any of the specified categories
+db.products.find({ category: { $nin: ["Electronics", "Clothing"] } })
+
+
+In this example, the query will return all documents in the "products" collection where the "category" field does not match either "Electronics" or "Clothing."
+
+### Description
+
+The `$nin` operator is particularly useful when you want to perform a query to exclude documents with specific values for a single field. It simplifies the query by allowing you to specify the values to exclude in an array, making it more concise and readable.
+
+This information should help you understand how to use the `$nin` operator effectively in MongoDB for filtering documents based on values that are not in a specified set of values in a field.
 
 ## MongoDB Logical Operators
 

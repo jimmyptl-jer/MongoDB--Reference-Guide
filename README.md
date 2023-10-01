@@ -292,3 +292,72 @@ In MongoDB, comparison operators are used to compare values in documents and per
     ```
 
 These comparison operators can be used in combination with other query operators and options to construct complex queries in MongoDB. They are essential for filtering and retrieving specific documents from a collection based on various conditions.
+
+Certainly, here's the content formatted as a GitHub README.md file for MongoDB's `$gte` operator:
+
+## MongoDB `$gte` Operator
+
+In MongoDB, the `$gte` (greater than or equal) operator is a comparison operator used to filter documents where a specified field's value is greater than or equal to a specified value. This operator is commonly used in queries when you want to find documents with values that are equal to or greater than a particular threshold.
+
+### Basic Syntax
+
+```javascript
+db.collectionName.find({ field: { $gte: value } })
+```
+
+- `db`: Refers to the MongoDB database where the collection is located.
+- `collectionName`: Specifies the name of the collection you want to query.
+- `field`: Represents the field in the documents that you want to compare.
+- `$gte`: The operator itself, indicating "greater than or equal to."
+- `value`: The threshold value to compare against. Documents with values greater than or equal to this value for the specified field will be included in the query results.
+
+### Example
+
+Let's demonstrate how to use the `$gte` operator in a MongoDB query:
+
+```javascript
+// Find documents where the "age" field is greater than or equal to 25
+db.users.find({ age: { $gte: 25 } })
+```
+
+In this example, the query will return all documents in the "users" collection where the "age" field is 25 or greater.
+
+### Description
+
+<Provide any additional information or considerations about the `$gte` operator, its use cases, and potential use in various scenarios.>
+
+This information should help you understand how to use the `$gte` operator effectively in MongoDB for filtering documents based on values that are greater than or equal to a specified threshold.
+
+## MongoDB `$lt` Operator
+
+In MongoDB, the `$lt` (less than) operator is a comparison operator used to filter documents where a specified field's value is less than a specified value. This operator is commonly used in queries when you want to find documents with values that are less than a particular threshold.
+
+### Basic Syntax
+
+```javascript
+db.collectionName.find({ field: { $lt: value } })
+```
+
+- `db`: Refers to the MongoDB database where the collection is located.
+- `collectionName`: Specifies the name of the collection you want to query.
+- `field`: Represents the field in the documents that you want to compare.
+- `$lt`: The operator itself, indicating "less than."
+- `value`: The threshold value to compare against. Documents with values less than this value for the specified field will be included in the query results.
+
+### Example
+
+Let's demonstrate how to use the `$lt` operator in a MongoDB query:
+
+```javascript
+// Find documents where the "price" field is less than $50
+db.products.find({ price: { $lt: 50 } })
+```
+
+In this example, the query will return all documents in the "products" collection where the "price" field is less than $50.
+
+### Description
+
+<Provide any additional information or considerations about the `$lt` operator, its use cases, and potential use in various scenarios.>
+
+This information should help you understand how to use the `$lt` operator effectively in MongoDB for filtering documents based on values that are less than a specified threshold.
+
